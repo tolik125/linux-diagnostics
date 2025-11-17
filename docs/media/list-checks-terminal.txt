@@ -1,0 +1,17 @@
+]633;E;echo "$ bin/linux-sos --list-checks";a706f7c0-c5bb-444e-80ee-57e7695d8dbe]633;C$ bin/linux-sos --list-checks
+
+ID                   Categoria  Prioridade Descrição
+--------------------------------------------------------------------------------
+audio_server_running audio      high       "PipeWire ou PulseAudio estão rodando?"
+default_sink_has_output audio      medium     "Dispositivo de saída padrão parece válido"
+alsa_udev_permissions audio      low        "Confere se o usuário está no grupo audio"
+snap_pulseaudio_conflict audio      medium     "Detecta instalação do snap pulseaudio conflitando"
+dns_resolve          network    high       "Testa resolução de DNS para cloudflare.com"
+gateway_ping         network    medium     "Verifica se o gateway padrão responde a ping"
+netplan_renderer_conflict network    medium     "Detecta configs Netplan apontando para renderer errado"
+resolved_stub_listening network    medium     "Valida se /etc/resolv.conf aponta para 127.0.0.53 (systemd-resolved)"
+netplan_pending_changes network    low        "Confere se há alterações pendentes no netplan"
+root_partition_usage system     high       "Verifica uso da partição raiz"
+log_disk_pressure    system     medium     "Detecta diretórios de log acima de 1G"
+time_drift           system     medium     "Confere se timedatectl reporta NTP sincronizado"
+apt_autoremove_pending system     low        "Itens órfãos aguardando autoremove"

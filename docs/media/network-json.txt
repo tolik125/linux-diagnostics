@@ -1,0 +1,70 @@
+[
+  {
+    "id": "dns_resolve",
+    "categoria": "network",
+    "prioridade": "high",
+    "descricao": "\"Testa resolução de DNS para cloudflare.com\"",
+    "status": "ok",
+    "probabilidade": "alta",
+    "mensagem": "Tudo certo.",
+    "sugestoes": [
+      "Teste ping 1.1.1.1; se funcionar, problema é DNS.",
+      "Edite /etc/resolv.conf ou configure DNS via NetworkManager.",
+      "Reinicie o roteador ou confirme se há bloqueios locais."
+    ]
+  },
+  {
+    "id": "gateway_ping",
+    "categoria": "network",
+    "prioridade": "medium",
+    "descricao": "\"Verifica se o gateway padrão responde a ping\"",
+    "status": "fail",
+    "probabilidade": "media",
+    "mensagem": "Gateway padrão não respondeu. (código 127)",
+    "sugestoes": [
+      "Confirme se o cabo ou Wi-Fi está conectado.",
+      "Execute 'nmcli device status' para ver o estado de links.",
+      "Reaplique seu perfil de rede com 'nmcli connection up <conexao>'."
+    ]
+  },
+  {
+    "id": "netplan_renderer_conflict",
+    "categoria": "network",
+    "prioridade": "medium",
+    "descricao": "\"Detecta configs Netplan apontando para renderer errado\"",
+    "status": "fail",
+    "probabilidade": "media",
+    "mensagem": "Renderer do Netplan pode estar ausente. (código 5)",
+    "sugestoes": [
+      "Ajuste renderer para NetworkManager ou networkd conforme sua escolha.",
+      "Rode 'sudo netplan generate && sudo netplan apply'."
+    ]
+  },
+  {
+    "id": "resolved_stub_listening",
+    "categoria": "network",
+    "prioridade": "medium",
+    "descricao": "\"Valida se /etc/resolv.conf aponta para 127.0.0.53 (systemd-resolved)\"",
+    "status": "ok",
+    "probabilidade": "media",
+    "mensagem": "Tudo certo.",
+    "sugestoes": [
+      "Verifique se /etc/resolv.conf é um link para /run/systemd/resolve/stub-resolv.conf.",
+      "Rode \"sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf\" quando apropriado.",
+      "Reinicie systemd-resolved após ajustes."
+    ]
+  },
+  {
+    "id": "netplan_pending_changes",
+    "categoria": "network",
+    "prioridade": "low",
+    "descricao": "\"Confere se há alterações pendentes no netplan\"",
+    "status": "fail",
+    "probabilidade": "baixa",
+    "mensagem": "Netplan não apontou alterações pendentes. (código 5)",
+    "sugestoes": [
+      "Execute 'sudo netplan generate && sudo netplan apply' após revisar arquivos.",
+      "Verifique YAMLs em /etc/netplan para renderers conflitantes."
+    ]
+  }
+]

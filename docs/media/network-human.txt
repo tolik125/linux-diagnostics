@@ -1,0 +1,30 @@
+[network][high][dns_resolve] ok (alta)
+  Tudo certo.
+  Sugestões:
+    - Teste ping 1.1.1.1; se funcionar, problema é DNS.
+    - Edite /etc/resolv.conf ou configure DNS via NetworkManager.
+    - Reinicie o roteador ou confirme se há bloqueios locais.
+[network][medium][gateway_ping] fail (media)
+  Gateway padrão não respondeu. (código 127)
+  Sugestões:
+    - Confirme se o cabo ou Wi-Fi está conectado.
+    - Execute 'nmcli device status' para ver o estado de links.
+    - Reaplique seu perfil de rede com 'nmcli connection up <conexao>'.
+  Correção disponível: restart_network_stack
+[network][medium][netplan_renderer_conflict] fail (media)
+  Renderer do Netplan pode estar ausente. (código 5)
+  Sugestões:
+    - Ajuste renderer para NetworkManager ou networkd conforme sua escolha.
+    - Rode 'sudo netplan generate && sudo netplan apply'.
+  Correção disponível: set_dns_cloudflare
+[network][medium][resolved_stub_listening] ok (media)
+  Tudo certo.
+  Sugestões:
+    - Verifique se /etc/resolv.conf é um link para /run/systemd/resolve/stub-resolv.conf.
+    - Rode "sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf" quando apropriado.
+    - Reinicie systemd-resolved após ajustes.
+[network][low][netplan_pending_changes] fail (baixa)
+  Netplan não apontou alterações pendentes. (código 5)
+  Sugestões:
+    - Execute 'sudo netplan generate && sudo netplan apply' após revisar arquivos.
+    - Verifique YAMLs em /etc/netplan para renderers conflitantes.
